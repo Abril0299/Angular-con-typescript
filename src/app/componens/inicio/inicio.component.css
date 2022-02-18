@@ -1,0 +1,16 @@
+#nombre{
+    font-size: 40px;
+    text-align:center;
+    font-family: 'Handlee', cursive;
+    }
+    
+    #foto{
+        height: 450px;
+        border-radius: 8px;
+        display:block;
+        margin: 0px auto;
+    }
+    
+    #foto:hover {filter: blur(5px);}
+
+    

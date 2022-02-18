@@ -1,0 +1,22 @@
+
+#informacion{
+    
+    text-align: center;
+    margin: 135px;
+     color: rgb(0, 0, 0);
+     font-size: 22px;   
+     font-family: 'Cormorant', serif;
+     line-height: 150%;
+     
+ }
+ 
+ #informacion p{
+     border-radius: 5px;
+ }
+ 
+ #fecha h3{
+     text-align: left;
+     font-size: 15px;  
+     font-family: 'Handlee', cursive;
+ }
+ 

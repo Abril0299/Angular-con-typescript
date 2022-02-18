@@ -1,0 +1,45 @@
+#header{
+    
+    width:100%;
+     
+    margin-top: 0px auto;
+    overflow:hidden;
+    background-color:navajowhite;
+    padding-left: 30px;  
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+    }
+
+    #div{
+    margin:0px auto;
+    line-height:700px;
+    
+  
+    }
+
+    #nav{
+      font-family: 'Handlee', cursive;
+        text-align: center;
+        line-height:100px;
+    }
+
+
+    header nav a{
+        margin: 30px;
+        display:inline-block; /*NPI*/
+        color:salmon;
+        text-decoration:none;
+        padding:15px 15px;
+        line-height:normal;
+        font-size:24px;
+        -webkit-transition:all 100ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease;
+      }
+      header nav a:hover{
+        background-color:rgb(231, 184, 231);
+        color: #ffffff;
+        border-radius:20px;
+      }
+      
+      
