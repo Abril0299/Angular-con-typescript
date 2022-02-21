@@ -10,6 +10,7 @@ import { InformacionComponent } from './componens/informacion/informacion.compon
 import { ContactoComponent } from './componens/contacto/contacto.component';
 import { FotosComponent } from './componens/fotos/fotos.component';
 import { HeaderComponent } from './componens/header/header.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeaderComponent } from './componens/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

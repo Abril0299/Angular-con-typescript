@@ -1,3 +1,92 @@
+#comen{
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    color: rgb(18, 162, 252);
+    
+}
 
+.form{
+    font-size: 20px;
+    margin-left: 90px;
+    margin-top: 100px;
+    font-family: 'Handlee', cursive;
+    width : 300px;
+   
+	padding:20px;
+	border-radius:10px;
+	
+	background-color: paleturquoise;
+    float: left;
+
+  
+}
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+
+#boton{
+    border-color: navajowhite;
+    margin-left: 110px;
+    margin-top: 25px;
+    border-radius: 15px;
+    font-family: 'Handlee', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, navajowhite, paleturquoise);
+    font-weight:bold;
       
-      
+}
+
+#boton:hover {
+ 
+    background-image: -webkit-linear-gradient(top, salmon, navajowhite);
+   
+    text-decoration: none;
+  }
+
+  textarea
+{
+    width: 290px;
+    height: 30px;
+}
+
+
+#foto1{
+   float: right;
+   margin-top: 160px;
+   margin-right: 50px;
+  
+}
+
+#foto2{
+    
+    margin-top: 160px;
+   margin-left:50px;
+   margin-right: 10px;
+ }
+
+#foto3{
+    float: right;
+    margin-top: 160px;
+    margin-right: 55px;
+ }
+
+img{
+    height: 310px;
+    border-radius: 8px;
+}
+
+
+#divgrandote{
+  
+    height: 550px;
+}
+#mensaje {
+    text-align: center;
+    font-size: 20px;  
+    font-family: 'Handlee', cursive;
+}

@@ -1,22 +1,44 @@
-
+#redes{
+    margin-top: 40px;
+    font-size:60px;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
 #informacion{
     
-    text-align: center;
-    margin: 135px;
+    text-align: justify;
+    margin: 120px;
      color: rgb(0, 0, 0);
-     font-size: 22px;   
-     font-family: 'Cormorant', serif;
+     font-size: 24px;   
+     font-family: 'Indie Flower', cursive;
      line-height: 150%;
      
  }
  
  #informacion p{
      border-radius: 5px;
+     background-color: paleturquoise;
+     width: 700px;
+     height: 300px;
+     margin: 0px 0px 0x 0px;
+     
+     padding: 40px;
+    
+     float: left;
+    
+     
+     
  }
+ #ESIME{
  
- #fecha h3{
-     text-align: left;
-     font-size: 15px;  
-     font-family: 'Handlee', cursive;
+    height: 400px;
+    float:right; 
  }
+
+
+
  
+ 
+
+
+

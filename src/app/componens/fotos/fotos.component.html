@@ -1,4 +1,37 @@
 <app-header></app-header>
 
+
+<div id="divgrandote">
+    <form class="form" [formGroup]="formulario" (ngSubmit)="onsubmit()">
+        <h2 id="comen">Comentarios !</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre"><br>
+    <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" formControlName="apellido"><br>
+    <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" formControlName="email"><br>
+    <br>
+        <label for="comentario">Comentario:</label><br>
+        <textarea type="text" id="comentario" formControlName="comentario" > </textarea> 
+        <button id="boton" type="submit" >Guardar</button>
+      </form>
+
+      <div>
+        <img id="foto1" src="../../../assets/1.jpeg">
+        <img id="foto2" src="../../../assets/2.jpeg">
+        <img id="foto3" src="../../../assets/3.jpeg">
+      
+    </div>
+</div>  
+
+
+<div *ngIf="status">
+    <h2>Los datos Ingresados Fueron</h2>
+    <h3>El nombre ingresado Fue : {{nombre}}</h3>
+</div>
+
 <div><app-footer></app-footer> </div> <!--JALAR LO DE FOOTER-->
   
+<div id="mensaje">{{mensaje}}</div>

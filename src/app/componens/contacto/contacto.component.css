@@ -1,34 +1,51 @@
-#facebook{
-    height: 50px;
-  
-    display:block;
-    margin-left: 200px;
-    margin-top: 90px;
+
+#redes{
+    margin: 0px auto;
+    font-size:60px;
+    text-align: center;
+    font-family: 'Handlee', cursive;
 }
 
-#instagram{
-    height: 50px;
-  
-    display:block;
-    margin-left: 200px;
-    margin-top: 90px;
-}
-#whats{
-    height: 50px;
-  
-    display:block;
-    margin-left: 200px;
-    margin-top: 90px;
-}
-#gmail{
-    height: 50px;
-  
-    display:block;
-    margin: 90px 0px 0px 30px;
+.contenedor{
+    padding:80px;
+    margin:0px;
     
+ 
 }
-#reacciones{
-    height: 100px;
-    float: right;
+.contenedor li{
+    list-style-type:none;
+    background-color:rgb(255, 255, 255);
   
+    height:90px;
+    padding:0px;
+   margin: 0px auto;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.contenedor li:hover{
+    margin-left:-115px;
+}
+
+
+.contenedor li img{ 
+    
+    float:left;
+    margin:10px 20px;
+    margin-left:500px;
+    width: 40px;
+    height: 40px;
+}
+.contenedor li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:45px;
+    font-size:18px;
+    font-family: 'Handlee', cursive;
+}
+.contenedor li p a{
+    text-decoration:none;
+    color:#000000;
 }
