@@ -8,24 +8,28 @@ import { EmailValidator, FormBuilder, FormControl, FormGroup, Validators } from 
   styleUrls: ['./fotos.component.css']
 })
 export class FotosComponent implements OnInit {
+  formulario = this.formBuilder.group({
+    nombre: '',
+    apellido: '',
+    email:'',
+    comentario:'',
+  });
 
-  constructor() { }
-  
 
-    formulario = new FormGroup({
-    nombre: new FormControl('',Validators.required),
-    apellido:new FormControl('',Validators.required),
-    email: new FormControl('',Validators.email),
-    comentario: new FormControl('',Validators.required),
+  nombre = '';
+  status = false;
 
-  })
+  constructor(private formBuilder: FormBuilder,) { 
+  }
 
   ngOnInit(): void {
   }
 
   onsubmit() {
-    // TODO: Use EventEmitter with form value
     console.log(this.formulario.value);
+    console.log('Datos guardados con exito !');
+    this.status = true
+    this.nombre = this.formulario.get('nombre')?.value
     
   }
   mensaje = "Vuelve pronto ♥ ";

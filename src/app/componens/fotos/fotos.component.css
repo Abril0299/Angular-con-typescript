@@ -90,3 +90,10 @@ img{
     font-size: 20px;  
     font-family: 'Handlee', cursive;
 }
+
+.datosMostrar{
+    text-align: left;
+    font-size: 20px;  
+    font-family: 'Indie Flower', cursive;
+    margin-left:40px ;
+}
