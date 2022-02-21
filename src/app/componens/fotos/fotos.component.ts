@@ -15,9 +15,10 @@ export class FotosComponent implements OnInit {
     comentario:'',
   });
 
-  nombre='';
-  apellido='';
-  email='';
+
+  nombre = '';
+  apellido = '';
+  email = '';
   status = false;
 
   constructor(private formBuilder: FormBuilder,) { 
@@ -33,13 +34,12 @@ export class FotosComponent implements OnInit {
     this.nombre = this.formulario.get('nombre')?.value
     this.apellido = this.formulario.get('apellido')?.value
     this.email = this.formulario.get('email')?.value
-    
-this.limpiarForm();
 
+    this.limpiarForm();
   }
 
   limpiarForm(){
-    this.formulario.reset()
+    this.formulario.reset();
   }
   mensaje = "Vuelve pronto ♥ ";
 }
