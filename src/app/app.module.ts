@@ -10,6 +10,7 @@ import { ContactoComponent } from './componens/contacto/contacto.component';
 import { FotosComponent } from './componens/fotos/fotos.component';
 import { HeaderComponent } from './componens/header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ListaUsuariosComponent } from './componens/lista-usuarios/lista-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     InformacionComponent,
     ContactoComponent,
     FotosComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListaUsuariosComponent
   ],
   imports: [
     BrowserModule,

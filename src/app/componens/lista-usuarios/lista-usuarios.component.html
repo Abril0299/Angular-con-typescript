@@ -1,0 +1,68 @@
+<div class="contenedor">
+    <div><p>Lista de Usuarios que han llenado el formulario !</p></div>
+    
+
+
+<div class="tabla">
+    <table id="tabla1">
+      <tr>
+          <th>Nombre</th> 
+          <th>Color</th> 
+          <th>Pelicula</th>
+      </tr>
+      <tbody *ngFor="let user of listado">
+              <tr>
+                  <td>{{user.nombre}}</td>
+                  <td>{{user.color}}</td>
+                  <td>{{user.pelicula}}</td>
+              </tr>
+      </tbody>
+  </table>
+  </div>
+
+  <div><p>Lista del último usuario Ingresado !</p></div>
+
+
+  <div class="tabla">
+    <table id="tabla2">
+      <tr>
+          <th>Nombre</th> 
+          <th>Color</th> 
+          <th>Pelicula</th>
+      </tr>
+      <tbody>
+              <tr>
+                  <td>{{ultimo.nombre}}</td>
+                  <td>{{ultimo.color}}</td>
+                  <td>{{ultimo.pelicula}}</td>
+              </tr>
+      </tbody>
+  </table>
+  </div>
+
+
+  <div><p>Lista del primer usuario Ingresado !</p></div>
+
+
+  <div class="tabla">
+    <table id="tabla2">
+      <tr>
+          <th>Nombre</th> 
+          <th>Color</th> 
+          <th>Pelicula</th>
+      </tr>
+      <tbody>
+              <tr>
+                  <td>{{primero.nombre}}</td>
+                  <td>{{primero.color}}</td>
+                  <td>{{primero.pelicula}}</td>
+              </tr>
+      </tbody>
+  </table>
+  </div>
+
+
+  
+</div>
+
+

@@ -5,7 +5,7 @@
 <div id="contenedor">
   
 <div class="contenedores"> <!--Formulario 1 con interface-->
-  <form class="formulario1" [formGroup]="formulario" (ngSubmit)="guardar()">
+  <form class="formulario1" [formGroup]="formulario1" (ngSubmit)="guardar()">
     <h1>Sobre ti</h1>  
     <div>
           <label for="nombre">
@@ -32,25 +32,13 @@
         
     
       <button class="button" type="submit">Subir</button>
-    
+      <div id="listado">
+        <a [routerLink]="['/listado']"> Ver listado de usuarios </a>
+      </div>
+      
     </form>
 
-    <div class="tabla">
-      <table id="tabla1">
-        <tr>
-            <th>Nombre</th> 
-            <th>Color</th> 
-            <th>Pelicula</th>
-        </tr>
-        <tbody *ngFor="let user of usuarios">
-                <tr>
-                    <td>{{user.nombre}}</td>
-                    <td>{{user.color}}</td>
-                    <td>{{user.pelicula}}</td>
-                </tr>
-        </tbody>
-    </table>
-    </div>
+    
 
 </div>
 

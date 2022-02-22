@@ -2,13 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/interface/user.modelo';
 import { Cancion } from 'src/app/interface/cancion.modelo';
 import { FormBuilder } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
+
+
 export class InicioComponent implements OnInit {
-  formulario = this.nuevoFormualario.group({
+  formulario1 = this.nuevoFormualario.group({
     nombre:'',
     color:'',
     pelicula:''
@@ -21,27 +25,35 @@ formulario2 = this.nuevoFormualario.group({
  
 });
 
+
 ngOnInit(): void {
 }
-constructor(private nuevoFormualario:FormBuilder){}
 
-usuarios:User[]=[];
+//PRACTICA SERVICE
+constructor(private nuevoFormualario:FormBuilder,private UserService:UserService){}
+
+
+//PRACTICA SERVICE
+
 
 guardar(){
     let nuevoUsuario : User = {
-      nombre :this.formulario.get('nombre')?.value,
-      pelicula :this.formulario.get('pelicula')?.value,
-      color :this.formulario.get('color')?.value,
+      nombre :this.formulario1.get('nombre')?.value,
+      pelicula :this.formulario1.get('pelicula')?.value,
+      color :this.formulario1.get('color')?.value,
     }
-    
-    this.usuarios.push(nuevoUsuario);
+
+    //PRACTICA SERVICE
+    this.UserService.addUser(nuevoUsuario);
     this.limpiarForms();
   
   }
   limpiarForms() {
-    this.formulario.reset();
+    this.formulario1.reset();
   }
 
+
+  //Formulario2
   canciones:Cancion[]=[];
   guardar2(){
     let nuevoUsuario2 : Cancion = {
