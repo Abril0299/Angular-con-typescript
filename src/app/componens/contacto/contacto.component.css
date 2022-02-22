@@ -1,51 +1,90 @@
 
-#redes{
+.contenedor{
+    
+    overflow: hidden;
+}
+
+.contenedor h1{
     margin: 0px auto;
     font-size:60px;
     text-align: center;
     font-family: 'Handlee', cursive;
+   margin-top: 20px;
 }
 
-.contenedor{
-    padding:80px;
-    margin:0px;
-    
- 
+.contenedores{
+    margin-top: 30px;
+    padding:10px;
+    margin-left: 250px;
+    float: left;
+    border-radius: 15px;
+    background-color: rgb(252, 252, 159);
+    width: 500px;
+    height: 400px;
 }
-.contenedor li{
+.contenedores li{
     list-style-type:none;
-    background-color:rgb(255, 255, 255);
-  
+    width: 100px;
+    
     height:90px;
     padding:0px;
-   margin: 0px auto;
     -webkit-transition:all 0.25s ease-in-out;
     -moz-transition:all 0.25s ease-in-out;
     -o-transition:all 0.25s ease-in-out;
     transition:all 0.25s ease-in-out;
     cursor:pointer;
 }
-.contenedor li:hover{
-    margin-left:-115px;
-}
 
 
-.contenedor li img{ 
+.contenedores li img{ 
     
-    float:left;
-    margin:10px 20px;
-    margin-left:500px;
+    float: left;
     width: 40px;
     height: 40px;
 }
-.contenedor li p{
+.contenedores li p{
     padding-top:5px;
-    margin:0px;
+    
     line-height:45px;
     font-size:18px;
     font-family: 'Handlee', cursive;
+    width: 370px;
 }
-.contenedor li p a{
+.contenedores li p a{
+    width: 300px;
+    margin-left: 40px;
     text-decoration:none;
+    font-size: 18px;
     color:#000000;
+}
+
+.formulario3{
+    margin-top: 30px;
+    font-family: 'Handlee', cursive;
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    margin-left: 900px;
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+.formulario3 h1{
+    font-size: 30px;
+    color: salmon;
+    font-family: 'Handlee', cursive;
+}
+
+
+
+.p{
+    font-size: 15px;
+    color: black;
+    font-family: 'Handlee', cursive; 
+}
+
+.h2{
+    font-size: 18px;
+    color: black;
+    font-family: 'Handlee', cursive; 
 }

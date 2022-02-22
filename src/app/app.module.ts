@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-
 import { AppComponent } from './app.component';
-
+import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './componens/footer/footer.component';
 import { InicioComponent } from './componens/inicio/inicio.component';
 import { InformacionComponent } from './componens/informacion/informacion.component';
@@ -26,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
