@@ -1,0 +1,96 @@
+<app-header></app-header>
+
+<div><h1 id="nombre1">Abril Hernández Hernández</h1> </div>
+
+<div id="contenedor">
+  
+<div class="contenedores"> <!--Formulario 1 con interface-->
+  <form class="formulario1" [formGroup]="formulario1" (ngSubmit)="guardar()">
+    <h1>Sobre ti</h1>  
+    <div>
+          <label for="nombre">
+          Nombre: 
+          </label> 
+          <input id="nombre" type="text" formControlName="nombre">
+      </div>
+      
+      <div>
+        <label for="color">
+         Color favorito:
+        </label> 
+        <input id="color" type="text" formControlName="color">
+      </div>
+    
+      <div>
+        <label for="pelicula">
+          Pelicula favorita:
+        </label> 
+        <input id="pelicula" type="text" formControlName="pelicula">
+      </div>
+
+     <br>
+        
+    
+      <button class="button" type="submit">Subir</button>
+      <div id="listado">
+        <a [routerLink]="['/listado']"> Ver listado de usuarios </a>
+      </div>
+      
+    </form>
+
+    
+
+</div>
+
+
+  <div class="contenedores">
+    
+    <img id="foto" src="../../../assets/Yo.jpeg">
+  </div>
+
+
+  <div class="contenedores"> <!--Formulario 2 con interface-->
+    <form class="formulario2" [formGroup]="formulario2" (ngSubmit)="guardar2()">
+      <h1>Cancion favorita</h1>  
+      <div>
+            <label for="titulo">
+                Titulo: 
+            </label>
+            <input id="titulo" type="text" formControlName="titulo">
+        </div>
+        <br>
+  <br>
+        <div>
+          <label for="artista">
+            Artista:
+          </label>
+          <input id="artista" type="text" formControlName="artista">
+        </div>
+  
+        <br>
+        <br>
+        <br>
+        
+        <button class="button" type="submit">Subir</button>
+      </form>
+  
+      
+  <div>
+    <table>
+      <tr>
+          <th>Titulo</th> <th>Artista</th>
+      </tr>
+      <tbody *ngFor="let cancion of canciones">
+              <tr>
+                  <td>{{cancion.titulo}}</td>
+                  <td>{{cancion.artista}}</td>
+                 
+              </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+ 
+</div>
+
+<div><app-footer></app-footer> </div> <!--JALAR LO DE FOOTER-->
