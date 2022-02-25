@@ -1,0 +1,23 @@
+<div><p>Lista de Animales de agregados a Api</p></div>
+    
+
+<div class="row">
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <th>Nombre</th>
+                <th>Especie</th>
+                <th>Color</th>
+            </thead>
+            <tbody *ngFor="let item of arreglo">
+                <tr>
+                    <td>{{item['nombre']}}</td>
+                    <td>{{item['especie']}}</td>
+                    <td>{{item['color']}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

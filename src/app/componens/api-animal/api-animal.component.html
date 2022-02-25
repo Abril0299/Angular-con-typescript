@@ -1,0 +1,53 @@
+<div class="contenedores"> <!--Formulario 1 con interface-->
+    <form class="formulario1" [formGroup]="formulario1" (ngSubmit)="guardar()">
+      <h1>Animales</h1>  
+      
+        
+        <div>
+          <label for="nombre">
+           Nombre:
+          </label> 
+          <input id="nombre" type="text" formControlName="nombre">
+        </div>
+      
+        <div>
+          <label for="especie">
+            Especie:
+          </label> 
+          <input id="especie" type="text" formControlName="especie">
+        </div>
+  
+     
+
+       <div>
+        <label for="especie">
+          Color:
+        </label> 
+        <input id="color" type="text" formControlName="color">
+      </div>
+<br>
+      
+      <button class="button" type="submit">Subir</button>
+<br>
+      <div id="listado">
+        <br>
+        <a [routerLink]="['/listaAnimales']"> Ver lista de Animales </a>
+      </div>
+
+     <br>
+          
+      
+        
+      </form>
+  
+      
+
+   
+
+
+
+     
+
+
+   
+  </div>

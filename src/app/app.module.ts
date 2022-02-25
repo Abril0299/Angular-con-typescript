@@ -11,6 +11,10 @@ import { FotosComponent } from './componens/fotos/fotos.component';
 import { HeaderComponent } from './componens/header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListaUsuariosComponent } from './componens/lista-usuarios/lista-usuarios.component';
+import { ApiAnimalComponent } from './componens/api-animal/api-animal.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ListadoAnimalesComponent } from './componens/listado-animales/listado-animales.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +26,16 @@ import { ListaUsuariosComponent } from './componens/lista-usuarios/lista-usuario
     ContactoComponent,
     FotosComponent,
     HeaderComponent,
-    ListaUsuariosComponent
+    ListaUsuariosComponent,
+    ApiAnimalComponent,
+    ListadoAnimalesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,58 @@
+
+
+.formulario1{
+    background-color: paleturquoise;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: 0px auto;
+    height: 300px;
+    margin-top: 50px;
+  
+}
+.formulario1 h1{
+    text-align: center;
+}
+
+.formulario1 label{
+    width:150px;
+    font-size: 20px;
+    display:inline-block;
+    margin: 10px;
+}
+
+.button{
+    border-color: navajowhite;
+    border-radius: 10px;
+    font-family: 'Handlee', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, navajowhite, paleturquoise);
+    margin-left: 160px;
+}
+
+#listado{
+    font-family: 'Handlee', cursive;
+      text-align: center;
+      line-height:100px;
+  }
+
+
+  #listado a{
+      margin: 20px;
+      display:inline-block; /*NPI*/
+      color:rgb(0, 146, 190);
+      text-decoration:none;
+      padding:15px 15px;
+      line-height:normal;
+      font-size:20px;
+      -webkit-transition:all 100ms ease;
+      -o-transition:all 500ms ease;
+      transition:all 500ms ease;
+    }
+    #listado a:hover{
+      background-color:salmon;
+      color: #ffffff;
+      border-radius:20px;
+    }

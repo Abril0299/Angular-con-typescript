@@ -8,6 +8,8 @@ import { InformacionComponent } from '../componens/informacion/informacion.compo
 import { FotosComponent } from '../componens/fotos/fotos.component';
 import { ContactoComponent } from '../componens/contacto/contacto.component';
 import { ListaUsuariosComponent } from '../componens/lista-usuarios/lista-usuarios.component';
+import { ApiAnimalComponent } from '../componens/api-animal/api-animal.component';
+import { ListadoAnimalesComponent } from '../componens/listado-animales/listado-animales.component';
 
 
 const routes : Routes = [
@@ -34,6 +36,16 @@ const routes : Routes = [
   {
     path:'listado',
     component:ListaUsuariosComponent
+  },
+
+  {
+    path:'animal',
+    component:ApiAnimalComponent
+  },
+
+  {
+    path:'listaAnimales',
+    component:ListadoAnimalesComponent
   },
 ]
 
